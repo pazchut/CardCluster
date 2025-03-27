@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+  <script>
+    TrelloPowerUp.initialize({
+      'board-buttons': function(t, options) {
+        return [{
+          text: 'CardCluster',
+          callback: function(t) {
+            return t.popup({
+              title: 'CardCluster',
+              url: 'https://your-username.github.io/cardcluster/index.html', // Your GitHub Pages URL
+              height: 300
+            });
+          }
+        }];
+      }
+    });
+  </script>
+</body>
+</html>
