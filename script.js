@@ -1,18 +1,3 @@
-var t = TrelloPowerUp.initialize({
-  'board-buttons': function(t, options) {
-    return [{
-      text: 'Multi-Ticket Manager',
-      callback: function(t) {
-        return t.popup({
-          title: 'Multi-Ticket Manager',
-          url: './index.html',
-          height: 300
-        });
-      }
-    }];
-  }
-});
-
 document.addEventListener('DOMContentLoaded', function() {
   var selectedCardIds = [];
 
